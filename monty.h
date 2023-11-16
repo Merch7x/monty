@@ -43,6 +43,7 @@ typedef struct instruction_s
 
 
 void trim_whitespace(char *str);
+int ops_comparison(char **args);
 
 
 
