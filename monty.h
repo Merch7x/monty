@@ -1,11 +1,12 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <sys/types.h>
 
 
 /**
@@ -43,6 +44,8 @@ typedef struct instruction_s
 
 
 void trim_whitespace(char *str);
+int ops_comparison(char **args);
+char **read_from_stream(char **str);
 
 
 
